@@ -10,12 +10,11 @@ const firebaseConfig = {
   storageBucket: "vitagita.appspot.com",
   messagingSenderId: "147856937008",
   appId: "1:147856937008:web:294bc8e06e9ad3941f9df5",
-  measurementId: "G-DN1K5MLH5H"
+  measurementId: "G-DN1K5MLH5H",
 };
 
 // Prevent duplicate initialization
-const app =
-  getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
