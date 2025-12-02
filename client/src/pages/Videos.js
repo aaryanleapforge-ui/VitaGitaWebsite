@@ -5,7 +5,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { FiPlus, FiEdit, FiTrash2 } from 'react-icons/fi';
+import { FiPlus } from 'react-icons/fi';
 import './Videos.css';
 import { getDocs, collection } from 'firebase/firestore';
 import { uploadVideoFile, createVideoDoc } from '../firebase/helpers';
