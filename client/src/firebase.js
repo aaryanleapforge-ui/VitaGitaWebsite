@@ -1,11 +1,10 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+import { initializeApp, getApps } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
-// 🔥 Direct Firebase Config (works 100% on Vercel)
 const firebaseConfig = {
-  apiKey: "AIzaSyCkZpw5Knimf0KQ6oQ8G4fV5DK3SGZj5s",
+  apiKey: "AIzaSyCkZpw5Knimf0KQ6OQ8G4fV5DK3SGZj5s",
   authDomain: "vitagita.firebaseapp.com",
   projectId: "vitagita",
   storageBucket: "vitagita.appspot.com",
@@ -14,10 +13,10 @@ const firebaseConfig = {
   measurementId: "G-DN1K5MLH5H"
 };
 
-// 🔥 Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Prevent duplicate initialization
+const app =
+  getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 
-// 🔥 Export services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
