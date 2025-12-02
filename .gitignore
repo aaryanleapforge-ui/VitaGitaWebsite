@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Environment variables
+.env
+
+# Build files
+client/build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local Firebase service account (do not commit)
+server/vitagita-firebase-adminsdk-fbsvc-1d2295b044.json
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.sqlite
+*.db
+data/
+=======
+node_modules/
+.env
+*.log
+.DS_Store
+npm-debug.log*
+>>>>>>> 3dc147f000191c049b88c9aeb319c7417d645ade
