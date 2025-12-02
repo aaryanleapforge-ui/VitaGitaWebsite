@@ -10,12 +10,12 @@ import { useAuth } from '../context/AuthContext';
 import { 
   FiHome, 
   FiUsers, 
-  FiBook, 
   FiBarChart2, 
   FiLogOut,
   FiMenu,
   FiX
 } from 'react-icons/fi';
+
 import './Layout.css';
 
 function Layout() {
